@@ -1,0 +1,119 @@
+body
+{
+	background: #EEE;
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 2em;
+}
+div.root
+{
+	min-width: 320px;
+	margin: 48px 256px 0;
+	background: #FFF;
+}
+div.root div.alert-area, div.root div.error-area { padding-bottom: 16px; } 
+div.root div.alert-area { background: #FFF url('../images/warning.png') no-repeat 16px 12px; }
+div.root div.error-area { background: #FFF url('../../../looksmog/error.png') no-repeat 16px 12px; }
+
+div#log { margin-top: 8px; }
+div#log div.alert-area
+{
+	padding: 4px 0 8px;
+	background: #FFF;
+}
+
+h1
+{
+	margin: 0;
+	margin: 8px 16px 0 80px;
+	padding: 8px 0 4px;
+	font-size: 2em;
+	line-height: 1em;
+}
+div.alert-area h1 { border-bottom: 1px solid #FD8; }
+div.error-area h1 { border-bottom: 1px solid #F80; }
+
+p
+{
+	margin: 4px 16px 0 80px;
+	padding: 6px 0 0;
+	line-height: 1.0em;
+}
+
+
+h2
+{
+	margin: 4px 16px 0 80px;
+	padding: 1px 0 0 24px;
+	background: #EFC url('../images/i-close.png') no-repeat 5px 4px;
+	border: 1px solid #EEE;
+	color: #794;
+	font-size: 1.5em;
+}
+h2:hover
+{
+	border-color: #EFA;
+	background-color: #EFA;
+	cursor: pointer;
+}
+h2.active { background: #EFC url('../images/i-open.png') no-repeat 5px 5px; }
+div.area
+{
+	margin: 0 16px 0 80px;
+	border: 1px solid #EEE;
+	border-top: 0;
+}
+
+h3
+{
+	margin: 0;
+	padding: 1px 0 0;
+	background: #FFF;
+	border-bottom: 1px solid #CCC;
+	color: #222;
+	font-size: 1em;
+	text-transform: uppercase;
+	line-height: 1.5em;
+}
+h3.slider
+{
+	font-weight: normal;
+	text-transform: none;
+}
+
+p#status
+{
+	min-width: 320px;
+	margin: 8px 256px 0;
+	padding: 0;
+	background: #DDD;
+	color: #555;
+	font-style: italic;
+	font-size: 13px;
+	line-height: 1.2em;
+}
+	p#status small
+	{
+		display: block;
+		margin: 4px 16px;
+		padding: 0 0 0 64px;
+		background: transparent url('../images/i-debug-mode.png') no-repeat 32px 7px;
+		font-size: 13px;
+	}
+	p#status strong { color: #222; }
+pre { margin: 0; padding: 0 0 0 22px; line-height: 1em; }
+table
+{
+	width: 100%;
+	font-size: 1em;
+	line-height: 1.2em;
+	border-bottom: 1px solid #DDD;
+}
+td { border-bottom: 1px solid #EEE; }
+
+h3 span { float: left; width: 256px; color: #00F; text-decoration: underline; cursor: pointer; }
+h3 span:hover { text-decoration: none; }
+h3 tt { color: #000; font-weight: bold; }
+
+.escms_debug_label { width: 192px; }
+.errorline { background: #FED url('../images/i-error.png') no-repeat 2px 1px; line-height: 1.5em; }
